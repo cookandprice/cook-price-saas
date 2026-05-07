@@ -1,3 +1,10 @@
-import createMiddleware from "next-intl/middleware"
-export default createMiddleware( locales: r","en","es")
-export const config =  matcher: pi_next.*..*).*)"
+import createMiddleware from 'next-intl/middleware';
+
+export default createMiddleware({
+  locales: ['fr', 'en', 'es'],
+  defaultLocale: 'fr'
+});
+
+export const config = {
+  matcher: ['/((?!api|_next|.*\\..*).*)']
+};
